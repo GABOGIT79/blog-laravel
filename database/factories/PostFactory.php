@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Str;
 
 /**
@@ -13,6 +14,7 @@ use Illuminate\Support\Str;
  */
 class PostFactory extends Factory
 {
+    use HasFactory;
     protected $model = Post::class;
     /**
      * Define the model's default state.

@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Str;
 
 /**
@@ -11,7 +12,7 @@ use Illuminate\Support\Str;
  */
 class CategoryFactory extends Factory
 {
-    
+    use HasFactory;
     protected $model = Category::class;
     /**
      * Define the model's default state.

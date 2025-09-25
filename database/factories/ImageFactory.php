@@ -4,13 +4,15 @@ namespace Database\Factories;
 
 use App\Models\Image;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Image>
  */
 class ImageFactory extends Factory
 {
-   protected $model = Image::class;
+   use HasFactory;
+    protected $model = Image::class;
     /**
      * Define the model's default state.
      *
